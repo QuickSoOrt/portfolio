@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import SocialNetworks from '../SocialNetworks';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false)
 
@@ -14,7 +15,9 @@ const Navbar = () => {
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       
       <div>
-        <h1 className='text-[#1DB700] font-bold'>BM</h1>
+        <a href='/'>
+          <img src={Logo} alt= 'Skill Icon' className='cursor-pointer'></img>
+        </a>
       </div>
       
       {/* menu */}
