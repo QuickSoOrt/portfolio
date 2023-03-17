@@ -1,6 +1,8 @@
 version: '3'
 services:
   app:
+    image: porfolio:latest
+    container_name: porfolio
     build: .
     ports:
       - '3000:3000'
