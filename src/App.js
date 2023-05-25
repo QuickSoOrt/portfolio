@@ -1,19 +1,16 @@
-import About from "./components/About";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import Contacts from "./components/Contacts";
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import AplicacaoProcessamentoSalarialPage from "./pages/works/AplicacaoProcessamentoSalarialPage";
+import AplicacaoGestaoAtivosImobilizadosPage from "./pages/works/AplicacaoGestaoAtivosImobilizadosPage";
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Work/>
-      <Contacts/>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/works/aplicacao-processamento-salarial" element={<AplicacaoProcessamentoSalarialPage />}></Route>
+        <Route path="/works/aplicacao-gestao-ativos-imobilizados" element={<AplicacaoGestaoAtivosImobilizadosPage />}></Route>
+      </Routes>
     </div>
   );
 }
