@@ -1,20 +1,19 @@
 import React from 'react';
-import HTML from '../../assets/html.png';
-import JavaScript from '../../assets/javascript.png';
-import CSS from '../../assets/css.png';
-import PostgreSQL from '../../assets/postgresql.png';
-import ReactJS from '../../assets/react.png';
-import NodeJS from '../../assets/node.png';
-import MongoDB from '../../assets/mongo.png';
-import TailwindCSS from '../../assets/tailwind.png';
-import NestJS from '../../assets/nestjs.png';
-import Docker from '../../assets/docker.png';
-import WPF from '../../assets/wpf.png';
-import Devexpress from '../../assets/devexpress.png';
-import Github from '../../assets/github.png';
-import MUI from '../../assets/mui.png';
+import HTML from '../../../assets/html.png';
+import JavaScript from '../../../assets/javascript.png';
+import CSS from '../../../assets/css.png';
+import PostgreSQL from '../../../assets/postgresql.png';
+import ReactJS from '../../../assets/react.png';
+import NodeJS from '../../../assets/node.png';
+import MongoDB from '../../../assets/mongo.png';
+import TailwindCSS from '../../../assets/tailwind.png';
+import NestJS from '../../../assets/nestjs.png';
+import Docker from '../../../assets/docker.png';
+import WPF from '../../../assets/wpf.png';
+import Devexpress from '../../../assets/devexpress.png';
+import Github from '../../../assets/github.png';
+import MUI from '../../../assets/mui.png';
 import SkillItem from './SkillItem';
-
 
 const Skills = () => {
   return (

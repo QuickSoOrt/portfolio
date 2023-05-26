@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import AplicacaoProcessamentoSalarialPage from "./pages/works/AplicacaoProcessamentoSalarialPage";
-import AplicacaoGestaoAtivosImobilizadosPage from "./pages/works/AplicacaoGestaoAtivosImobilizadosPage";
+import SalaryProcessingPage from "./pages/works/SalaryProcessingPage";
+import FixedAssetManagementPage from "./pages/works/FixedAssetManagementPage";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
-        <Route path="/works/aplicacao-processamento-salarial" element={<AplicacaoProcessamentoSalarialPage />}></Route>
-        <Route path="/works/aplicacao-gestao-ativos-imobilizados" element={<AplicacaoGestaoAtivosImobilizadosPage />}></Route>
+        <Route path="/works/salary-processing-app" element={<SalaryProcessingPage />}></Route>
+        <Route path="/works/fixed-asset-management-app" element={<FixedAssetManagementPage />}></Route>
       </Routes>
     </div>
   );

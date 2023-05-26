@@ -1,11 +1,11 @@
 import React from "react";
 
-import About from "../../components/About";
-import Home from "../../components/Home";
-import Navbar from "../../components/Navbar";
-import Skills from "../../components/Skills";
-import Work from "../../components/Work";
-import Contacts from "../../components/Contacts";
+import About from "../../components/main-page/About";
+import Home from "../../components/main-page/Home";
+import Navbar from "../../components/main-page/Navbar";
+import Skills from "../../components/main-page/Skills";
+import Work from "../../components/main-page/Work";
+import Contacts from "../../components/main-page/Contacts";
 
 const MainPage = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from '../../assets/logo.png';
+import Logo from '../../../assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import SocialNetworks from '../SocialNetworks';
+import SocialNetworks from '../../SocialNetworks';
 
 
 const Navbar = () => {
