@@ -7,7 +7,7 @@ const WorkItem = (props) => {
       style={{ backgroundImage: `url(${props.image})` }}
       className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
     >
-      <div className="opacity-0 group-hover:opacity-100">
+      <div className="opacity-0 group-hover:opacity-100 text-center">
         <span className="text-1xl font-bold text-white tracking-wider text-center">
           {props.name}
         </span>

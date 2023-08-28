@@ -17,11 +17,20 @@ const Features = (props) => {
         </div>
         <div className="w-ful py-8">
           <div>
-            <ul className="list-disc space-y-3 marker:text-[#1DB700] list-inside">
-              {props.features.map((item, index) => (
-                <li key={index} className="p-0">
-                  {item}
-                </li>
+            <ul className="list-disc space-y-2 marker:text-[#1DB700] list-inside">
+              {props.features.map((feature, index) => (
+                <div>
+                  <li key={index} className="p-0 list-decimal">
+                    {feature.feature}
+                  </li>
+                  <ul className="list-disc space-y-2 marker:text-[#1DB700] list-inside mt-2">
+                    {feature.subFeatures.map((subFeature, index) => (
+                      <li key={index} className="p-0 ml-6 text-sm">
+                        {subFeature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </ul>
           </div>

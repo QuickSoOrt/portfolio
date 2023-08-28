@@ -15,14 +15,14 @@ const Work = () => {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <WorkItem
-            name={"Salary Processing App"}
+            name={"Gestware Next - Processamento Salarial"}
             image={SalaryProcessingApp}
             aboutUrl={"/works/salary-processing-app"}
             hasDemo={false}
             demoUrl={"/"}
           />
           <WorkItem
-            name={"Fixed Asset Management App"}
+            name={"Gestware Next - Gestão de Ativos Imobilizados"}
             image={FixedAssetManagementApp}
             aboutUrl={"/works/fixed-asset-management-app"}
             hasDemo={true}
