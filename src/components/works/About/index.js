@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About = (props) => {
   return (
     <div
       name="about"
@@ -16,7 +16,7 @@ const About = () => {
           </p>
         </div>
         <div className="w-ful py-8">
-          
+          <p>{props.about}</p>
         </div>
       </div>
     </div>

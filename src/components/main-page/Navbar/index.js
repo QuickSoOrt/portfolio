@@ -13,45 +13,50 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      
+
       <div>
         <a href='/'>
-          <img src={Logo} alt= 'Skill Icon' className='cursor-pointer'></img>
+          <img src={Logo} alt='Skill Icon' className='cursor-pointer'></img>
         </a>
       </div>
-      
+
       {/* menu */}
       <ul className='hidden md:flex'>
-          <li>
-            <Link className='hover:text-[#1DB700]' to="home" spy={true} smooth={true} duration={500}>
-              Home
-            </Link>
-          </li>
-          <li>
+        <li>
+          <Link className='hover:text-[#1DB700]' to="home" spy={true} smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
           <Link className='hover:text-[#1DB700]' to="about" spy={true} smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link className='hover:text-[#1DB700]' to="skills" spy={true} smooth={true} duration={500}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link className='hover:text-[#1DB700]' to="work" spy={true} smooth={true} duration={500}>
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link className='hover:text-[#1DB700]' to="contacts" spy={true} smooth={true} duration={500}>
-              Contacts
-            </Link>
-          </li>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className='hover:text-[#1DB700]' to="journey" spy={true} smooth={true} duration={500}>
+            Journey
+          </Link>
+        </li>
+        <li>
+          <Link className='hover:text-[#1DB700]' to="skills" spy={true} smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link className='hover:text-[#1DB700]' to="work" spy={true} smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link className='hover:text-[#1DB700]' to="contacts" spy={true} smooth={true} duration={500}>
+            Contacts
+          </Link>
+        </li>
       </ul>
 
       {/* hamburger */}
       <div onClick={handleClick} className='md:hidden z-10'>
-        {!nav ? <FaBars/> : <FaTimes/>}
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* mobile-menu */}
@@ -64,6 +69,11 @@ const Navbar = () => {
         <li className='py-6 text-4xl'>
           <Link onClick={handleClick} to="about" spy={true} smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="journey" spy={true} smooth={true} duration={500}>
+            Journey
           </Link>
         </li>
         <li className='py-6 text-4xl'>
@@ -83,7 +93,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-     <SocialNetworks/>
+      <SocialNetworks />
 
     </div>
   );

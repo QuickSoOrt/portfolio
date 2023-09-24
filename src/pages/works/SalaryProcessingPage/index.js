@@ -30,6 +30,12 @@ const features = [
     ],
   },
   {
+    feature: "Mandatory Documents:",
+    subFeatures: [
+      'Issue of all mandatory documents such as "Declaração Mensal de Remunerações - Autoridade Tributária", "Declaração Mensal de Remunerações - Segurança Social", "Modelo 10", "Folhas de Férias", etc...',
+    ],
+  },
+  {
     feature: 'Integration with "Autoridade Tributária" and "Segurança Social" web services:',
     subFeatures: [
       'Communication of mandatory documents by web services',
@@ -43,7 +49,28 @@ const features = [
   }
 ];
 
+const technologies = [
+  {
+    feature: "Programing Languages:",
+    subFeatures: ["C#"],
+  },
+  {
+    feature: "Frameworks:",
+    subFeatures: [
+      ".NET, WPF + DevExpress",
+    ],
+  },
+  {
+    feature: "Database:",
+    subFeatures: [
+      "PostgreSQL",
+    ],
+  }
+];
+
 const images = [SalaryProcessingApp];
+
+const about = "Gestware Next - Processamento Salarial is a salary processing application that simplifies the complex task of payroll management. With Gestware Next - Processamento Salarial, you can effortlessly handle all aspects of payroll, from calculating salaries to generating mandatory documents to authorities like 'Autoridade Tributária' and 'Segurança Social'. The intuitive interface allows users to add, edit, and delete employee records with ease. Keep a comprehensive employee history, including records of absences, overtime, vacations, salary changes, and contracts. What sets Gestware Next - Processamento Salarial apart is its seamless integration with 'Autoridade Tributária' and 'Segurança Social' web services. Submit mandatory documents and effortlessly consult communicated records, ensuring compliance is a breeze. Plus, Gestware Next - Processamento Salarial offers accounting integration for a streamlined HR and payroll experience."
 
 const SalaryProcessingPage = () => {
   return (
@@ -54,9 +81,9 @@ const SalaryProcessingPage = () => {
         description={"// Salary Processing Application"}
         images={images}
       />
-      <About />
+      <About about={about}/>
       <Features features={features} />
-      <Technologies />
+      <Technologies technologies={technologies}/>
     </div>
   );
 };

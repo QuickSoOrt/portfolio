@@ -24,8 +24,8 @@ const Work = () => {
           <WorkItem
             name={"Gestware Next - Gestão de Ativos Imobilizados"}
             image={FixedAssetManagementApp}
-            aboutUrl={"/works/fixed-asset-management-app"}
-            hasDemo={true}
+            aboutUrl={"/works/fixed-asset-management-app/"}
+            hasDemo={false}
             demoUrl={"/"}
           />
         </div>

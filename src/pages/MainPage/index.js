@@ -6,6 +6,7 @@ import Navbar from "../../components/main-page/Navbar";
 import Skills from "../../components/main-page/Skills";
 import Work from "../../components/main-page/Work";
 import Contacts from "../../components/main-page/Contacts";
+import Journey from "../../components/main-page/Journey";
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       <Navbar />
       <Home />
       <About />
+      <Journey />
       <Skills />
       <Work />
       <Contacts />

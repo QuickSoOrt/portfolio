@@ -8,6 +8,25 @@ import FixedAssetManagementApp from "../../../assets/projects/fixed-asset-manage
 
 const features = [];
 
+const technologies = [
+  {
+    feature: "Programing Languages:",
+    subFeatures: ["C#"],
+  },
+  {
+    feature: "Frameworks:",
+    subFeatures: [
+      ".NET, WPF + DevExpress",
+    ],
+  },
+  {
+    feature: "Database:",
+    subFeatures: [
+      "PostgreSQL",
+    ],
+  }
+];
+
 const images = [FixedAssetManagementApp];
 
 const FixedAssetManagementPage = () => {
@@ -17,7 +36,7 @@ const FixedAssetManagementPage = () => {
       <Home title={'Gestware Next - Gestão de Ativos Imobilizados'} description={'// Fixed Asset Management Application'} images={images}/>
       <About/>
       <Features features={features}/>
-      <Technologies/>
+      <Technologies technologies={technologies}/>
     </div>
   );
 };

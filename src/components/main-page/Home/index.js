@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 import {HiArrowNarrowRight} from 'react-icons/hi';
 
-const description = "I'm a dedicated Software Engineer driven by a passion for innovation and pushing the boundaries of technology. With a strong background in designing and developing software applications, I thrive in dynamic, collaborative environments. My expertise lies in programming languages like Java, Python, and JavaScript, and I have extensive experience in building web and mobile applications.";
+const description = "My career in software engineering has been a journey of continuous growth and exploration. With a strong foundation in coding and a passion for solving complex problems, I find joy in crafting elegant solutions that make a difference. My experience spans various domains, including web and desktop application development, as well as a proficiency in programming languages such as C# and JavaScript. I am committed to staying at the forefront of technology, and I look forward to leveraging my skills to contribute to exciting projects and drive innovation in the field.";
 
 const Home = () => {
   return (
