@@ -27,6 +27,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Home
           </Link>
@@ -38,6 +39,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             About
           </Link>
@@ -49,6 +51,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Features
           </Link>
@@ -60,6 +63,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Technologies
           </Link>
@@ -86,6 +90,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Home
           </Link>
@@ -97,6 +102,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             About
           </Link>
@@ -108,6 +114,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Skills
           </Link>
@@ -119,6 +126,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Work
           </Link>
@@ -130,6 +138,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Contacts
           </Link>

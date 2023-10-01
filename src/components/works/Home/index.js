@@ -22,7 +22,7 @@ const Home = (props) => {
   };
 
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="home" className="w-full min-h-screen pt-[80px] bg-[#0a192f] text-gray-300">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="text-center">
           <p className="text-2xl font-bold inline border-b-4 border-[#1DB700] text-center">
