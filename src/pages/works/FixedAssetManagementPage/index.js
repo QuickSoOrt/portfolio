@@ -11,7 +11,7 @@ const FixedAssetManagementPage = () => {
     <div>
       <Navbar />
       <Home title={'Gestware Next - Gestão de Ativos Imobilizados'} description={'// Fixed Asset Management Application'} images={data.images}/>
-      <About/>
+      <About about={data.about}/>
       <Features features={data.features}/>
       <Technologies technologies={data.technologies}/>
     </div>

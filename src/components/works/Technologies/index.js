@@ -20,13 +20,13 @@ const Technologies = (props) => {
             <ul className="list-disc space-y-2 marker:text-[#1DB700] list-inside">
               {props.technologies.map((feature, index) => (
                 <div>
-                  <li key={index} className="p-0 list-decimal">
-                    {feature.feature}
+                  <li key={index} className="p-0 list-decimal text-xl font-semibold cursor-default">
+                    {feature.category}
                   </li>
-                  <ul className="list-disc space-y-2 marker:text-[#1DB700] list-inside mt-2">
-                    {feature.subFeatures.map((subFeature, index) => (
+                  <ul className="list-disc space-y-2 marker:text-[#1DB700] list-inside mt-2 cursor-default">
+                    {feature.technologies.map((technology, index) => (
                       <li key={index} className="p-0 ml-6 text-sm">
-                        {subFeature}
+                        {technology}
                       </li>
                     ))}
                   </ul>

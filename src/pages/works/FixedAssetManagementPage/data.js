@@ -20,53 +20,81 @@ import Image00017 from "../../../assets/projects/fixed-asset-management/00017.pn
 import Image00018 from "../../../assets/projects/fixed-asset-management/00018.png";
 
 const images = [
-    FixedAssetManagementApp,
-    Image00000,
-    Image00001,
-    Image00002,
-    Image00003,
-    Image00004,
-    Image00005,
-    Image00006,
-    Image00007,
-    Image00008,
-    Image00009,
-    Image00010,
-    Image00011,
-    Image00012,
-    Image00013,
-    Imag000014,
-    Image00015,
-    Image00016,
-    Image00017,
-    Image00018,
+  FixedAssetManagementApp,
+  Image00000,
+  Image00001,
+  Image00002,
+  Image00003,
+  Image00004,
+  Image00005,
+  Image00006,
+  Image00007,
+  Image00008,
+  Image00009,
+  Image00010,
+  Image00011,
+  Image00012,
+  Image00013,
+  Imag000014,
+  Image00015,
+  Image00016,
+  Image00017,
+  Image00018,
 ];
 
-const features = [];
+const features = [
+  {
+    feature: "Capital Goods Management:",
+    subFeatures: [
+      "Registration of acquisitions and repairs",
+      "Calculation of depreciations and revaluations",
+      "Registration of write-offs and disposals",
+    ],
+  },
+  {
+    feature: "Issuance of Mandatory Documents:",
+    subFeatures: [
+      "Issuance of all mandatory documents such as 'Modelo 31', 'Modelo 32', etc.",
+    ],
+  },
+  {
+    feature: "Reports Generation:",
+    subFeatures: [
+      'Generation of different types of reports such as capital goods iventory, movements history, etc...',
+    ],
+  },
+  {
+    feature: 'Accounting Integration.',
+    subFeatures: []
+  }
+];
 
 const technologies = [
   {
-    feature: "Programing Languages:",
-    subFeatures: ["C#"],
+    category: "Programing Languages:",
+    technologies: ["C#"],
   },
   {
-    feature: "Frameworks:",
-    subFeatures: [
+    category: "Frameworks:",
+    technologies: [
       ".NET, WPF + DevExpress",
     ],
   },
   {
-    feature: "Database:",
-    subFeatures: [
+    category: "Database:",
+    technologies: [
       "PostgreSQL",
     ],
   }
 ];
 
+const about = "'Gestware Next - Gestão de Ativos Imobilizados' is a portuguese fixed asset management application that helps accountants to manage their clients capital goods. The application was developed at the company Gestware with the purpose of replacing its old legacy fixed asset management application built in Delphi with a modern application built in .Net. The application provides a wide array of features, including capital goods management, mandatory documents generation, accounting integration and many other features. Due to its user-friendly and contemporary interface, coupled with a range of advanced features, the application garnered significant success among customers.";
+
 const data = {
-    images: images,
-    technologies: technologies,
-    features: features,
+  images: images,
+  technologies: technologies,
+  about: about,
+  features: features,
 }
 
 export default data;

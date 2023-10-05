@@ -101,23 +101,29 @@ const features = [
   {
     feature: "Salary Processing:",
     subFeatures: [
-      'Issue of all mandatory documents such as "Declaração Mensal de Remunerações - Autoridade Tributária", "Declaração Mensal de Remunerações - Segurança Social", "Modelo 10", "Folhas de Férias", etc...',
+      "Processing and sending of payslips by email",
     ],
   },
   {
-    feature: "Mandatory Documents Issue:",
+    feature: "Issuance of Mandatory Documents:",
     subFeatures: [
-      'Issue of all mandatory documents such as "Declaração Mensal de Remunerações - Autoridade Tributária", "Declaração Mensal de Remunerações - Segurança Social", "Modelo 10", "Folhas de Férias", etc...',
+      "Issuance of all mandatory documents such as 'Declaração Mensal de Remunerações - Autoridade Tributária', 'Declaração Mensal de Remunerações - Segurança Social', 'Modelo 10', 'Relatório Único', 'Folhas de Férias', etc.",
     ],
   },
   {
-    feature: "Mandatory Documents:",
+    feature: "Reports Generation:",
     subFeatures: [
-      'Issue of all mandatory documents such as "Declaração Mensal de Remunerações - Autoridade Tributária", "Declaração Mensal de Remunerações - Segurança Social", "Modelo 10", "Folhas de Férias", etc...',
+      'Generation of different types of reports such as monthly and anunal charges per employee / establishment, employee statistics per establishment, etc.',
     ],
   },
   {
-    feature: 'Integration with "Autoridade Tributária" and "Segurança Social" web services:',
+    feature: 'Multi Company Operations:',
+    subFeatures: [
+      'Capability to perform an operation simultaneously across multiple companies',
+    ]
+  },
+  {
+    feature: "Integration with 'Autoridade Tributária' and 'Segurança Social' web services:",
     subFeatures: [
       'Communication of mandatory documents by web services',
       'Consultation of communicated documents',
@@ -132,25 +138,24 @@ const features = [
 
 const technologies = [
   {
-    feature: "Programing Languages:",
-    subFeatures: ["C#"],
+    category: "Programing Languages:",
+    technologies: ["C#"],
   },
   {
-    feature: "Frameworks:",
-    subFeatures: [
+    category: "Frameworks:",
+    technologies: [
       ".NET, WPF + DevExpress",
     ],
   },
   {
-    feature: "Database:",
-    subFeatures: [
+    category: "Database:",
+    technologies: [
       "PostgreSQL",
     ],
   }
 ];
 
-const about = "Gestware Next - Processamento Salarial is a salary processing application that simplifies the complex task of payroll management. With Gestware Next - Processamento Salarial, you can effortlessly handle all aspects of payroll, from calculating salaries to generating mandatory documents to authorities like 'Autoridade Tributária' and 'Segurança Social'. The intuitive interface allows users to add, edit, and delete employee records with ease. Keep a comprehensive employee history, including records of absences, overtime, vacations, salary changes, and contracts. What sets Gestware Next - Processamento Salarial apart is its seamless integration with 'Autoridade Tributária' and 'Segurança Social' web services. Submit mandatory documents and effortlessly consult communicated records, ensuring compliance is a breeze. Plus, Gestware Next - Processamento Salarial offers accounting integration for a streamlined HR and payroll experience."
-
+const about = "'Gestware Next - Processamento Salarial' is a portuguese salary processing application that simplifies the complex task of payroll management. The application was developed at the company Gestware with the purpose of replacing its old legacy salary processing application built in Delphi with a modern application built in .Net. The application provides a wide array of features, including employee management, salary receipt processing, mandatory document generation, seamless integration with web services provided by the 'Autoridade Tributária' and 'Segurança Social' and many other features. Due to its user-friendly and contemporary interface, coupled with a range of advanced features, the application garnered significant success among customers.";
 
 const data = {
   images: images,

@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div>
         <a href="/">
           <img src={Logo} alt="Skill Icon" className="cursor-pointer"></img>
@@ -110,37 +110,25 @@ const Navbar = () => {
         <li className="py-6 text-4xl">
           <Link
             onClick={handleClick}
-            to="skills"
+            to="features"
             spy={true}
             smooth={true}
             duration={500}
             offset={-80}
           >
-            Skills
+            Features
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link
             onClick={handleClick}
-            to="work"
+            to="technologies"
             spy={true}
             smooth={true}
             duration={500}
             offset={-80}
           >
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
-            to="contacts"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-80}
-          >
-            Contacts
+            Technologies
           </Link>
         </li>
       </ul>

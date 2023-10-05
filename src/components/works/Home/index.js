@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faForward } from '@fortawesome/free-solid-svg-icons'
+import { faBackward } from '@fortawesome/free-solid-svg-icons'
 
 const Home = (props) => {
   const [images, setImages] = useState(props.images);
@@ -15,9 +18,15 @@ const Home = (props) => {
 
   const handlePrev = () => {
     if (images.length > 0) {
-      const prevImage = Math.abs((selectedImage - 1) % images.length);
+      let nextImage;
+      if (selectedImage > 0) {
+        nextImage = Math.abs((selectedImage - 1) % images.length);
+      }
+      else {
+        nextImage = images.length - 1;
+      }
 
-      setSelectedImage(prevImage);
+      setSelectedImage(nextImage);
     }
   };
 
@@ -30,14 +39,26 @@ const Home = (props) => {
           </p>
           <p className="py-4">{props.description}</p>
         </div>
-        <div className="mt-[40px]">
+        <div className="mt-[40px] relative">
           <img
             src={images[selectedImage]}
             className="w-full aspect-video"
-          ></img>
-          <div className="flex justify-between w-full mt-4">
-            <button onClick={handlePrev}>Prev</button>
-            <button onClick={handleNext}>Next</button>
+          >
+
+          </img>
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="flex justify-between w-full mt-4 px-5">
+              <button onClick={handlePrev}>
+                <div className="text-[#1DB700] text-xl font-semibold">
+                <FontAwesomeIcon icon={faBackward} beat/>
+                </div>
+              </button>
+              <button onClick={handleNext}>
+                <div className="text-[#1DB700] text-xl font-semibold">
+                <FontAwesomeIcon icon={faForward} beat/>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
