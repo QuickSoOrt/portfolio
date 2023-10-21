@@ -1,6 +1,7 @@
 import React from "react";
 import SalaryProcessingApp from "../../../assets/projects/salary-processing/salaryprocessingapp.png";
 import FixedAssetManagementApp from "../../../assets/projects/fixed-asset-management/fixedassetmanagementapp.png";
+import DashiroApp from "../../../assets/projects/dashiro/dashiroapp.png";
 import WorkItem from "./WorkItem";
 
 const Work = () => {
@@ -14,6 +15,13 @@ const Work = () => {
           <p className="py-6">// Check out some of my recent work</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <WorkItem
+            name={"Dashiro - DEGIRO Dashboard"}
+            image={DashiroApp}
+            aboutUrl={"/works/dashiro"}
+            hasDemo={true}
+            demoUrl={"/"}
+          />
           <WorkItem
             name={"Gestware Next - Processamento Salarial"}
             image={SalaryProcessingApp}
